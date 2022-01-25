@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(frase) {
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+    }
+
+
+    var idade = parseInt(prompt("Qual é sua idade?"));
+    var temCarteira = prompt("Tem carteira? Responda S ou N");
+
+ 
+    if(idade <= 17 && temCarteira != false){
+        mostra("Sua idade não permitir Dirigir, e você respondeu " + temCarteira + ", não pode dirigir! " + idade);
+    }  
+    if(idade > 18 && temCarteira == "S" || "s"){
+            mostra("Você tem idade para dirigir!");
+    }else{
+            mostra("Você tem idade para dirigir mas precisa tira sua habilitação!");
+        }
+
+   
+    
+    
+    
+   
+</script>

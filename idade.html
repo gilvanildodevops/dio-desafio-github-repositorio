@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+   function pulaLinha(){
+    
+    document.write("<br><br>");
+
+    }
+
+    function mostra(frase){
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var nome = prompt("Qual o seu nome?")
+    var anoAtual = 2022;
+    var anoNascimento = parseInt(prompt("Escreva do seu ano de Nascimento."));
+    var idadeFinal = anoAtual - anoNascimento;
+
+    mostra("Olá, " + nome + ", Ano atual é: " + anoAtual);
+    mostra("Ano de seu Nascimento é: " + anoNascimento);
+    mostra("Sua idade atual é " + idadeFinal + " anos");
+
+</script>

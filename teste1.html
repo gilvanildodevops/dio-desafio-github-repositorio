@@ -1,0 +1,156 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write("**************************************************");
+        pulaLinha();
+        document.write(frase);
+        pulaLinha();
+    }
+
+    mostra("Nildo tem 44 anos ");
+    mostra("Diana tem 42 anos ");
+
+    mostra("Nossa diferença de idade é " + (45 - 43));
+
+</script>
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var minhaIdade = 1977 - 2022;
+    var idadeDiana = 1979 - 2022;
+
+    mostra("Nossa diferença de idade é " + (minhaIdade - idadeDiana));
+    pulaLinha();
+</script>
+
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoInicio   = 2022 - 1500;
+
+    mostra("De 1500 até hoje se passaram " + (anoInicio) + " anos."); 
+    mostra("De 1500 até hoje se passaram " + Math.round(anoInicio/28) + " decadas.");
+</script>
+
+<meta charset="UTF-8">
+
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var idadeMediaQuandoTemFilhos = 28;
+        var anoAtual = 2016; 
+
+        var quantidadeDeGeracoes = (anoAtual - 1500) / idadeMediaQuandoTemFilhos;
+
+        mostra(Math.round(quantidadeDeGeracoes));
+    </script>
+
+
+<meta charset="UTF-8">
+<script>
+
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(frase) {
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+    }
+
+    var ano = 2019;
+    mostra("Eu nasci em : " + (ano - 25));
+    mostra("Adriano nasceu em : " + (ano - 26));
+    mostra("Paulo nasceu em : " + (ano - 32));
+
+</script>
+
+<br><br><br><br>
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostra("O resultado da soma de 10 + 20 e 30 / 2 é igual a " + (resultado));
+</script>
+
+<br><br><br><br>
+
+<script>
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function a(texto) {
+
+        return "(" + texto + ")";
+    }
+
+    function b(texto) {
+
+        return "@" + texto + "@";
+    }
+
+    function c(nome, sobrenome) {
+
+        return b(nome + " " + a(sobrenome));
+
+    }
+
+    var resultado = c("Flávio", "Almeida");
+
+    mostra(resultado);
+
+</script>
