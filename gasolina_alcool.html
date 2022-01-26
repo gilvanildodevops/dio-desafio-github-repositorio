@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h3>Preço Álcool e Gasolina abastecido</h3>
+
+<script>
+    function pulaLinha() {
+        document.write("<br><hr><br>");
+    }
+
+    function mostra(frase) {
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+    }
+
+   
+    var valorg = parseInt(prompt("Quantos R$ vai abastecer de Gasolina?"));
+    var gasolina = parseInt(prompt("Valor de 1 litro de Gasolina?"));
+    var valora = parseInt(prompt("Quantos R$ vai abastecer de Alcool?"));
+    var alcool = parseInt(prompt("Valor de 1 litro de Alcool?"));
+    var cgasolina = valorg / gasolina;
+    var calcool = valora / alcool;
+
+    mostra("Você colocou " + valorg + " de Gasolina.");
+    mostra("A Gasolina está custando " + gasolina + " reias por 1 litro.");
+    mostra("O Alcool está custando " + alcool + " reias por 1 litro.");
+    mostra("Total de litros de Gasolina = " + cgasolina);
+    mostra("Total de litros de Alcool = " + calcool);
+    mostra("No total você tem " + cgasolina+calcool + " litros para rodar");
+
+</script>
+

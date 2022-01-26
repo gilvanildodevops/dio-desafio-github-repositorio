@@ -12,15 +12,15 @@
         pulaLinha();
     }
 
-    var limite = parseInt(prompt("Entre com a data Limite para Copa"));
-    var caminhoComGasolina = 480;
-    var consumoDeAlcool = 300;
-    var tanque = 40;
+   
+    var caminhoComGasolina = parseInt(prompt("Insira a distância que irá percorrer em km"));
+    var consumoDeAlcool = parseInt(prompt("Qantos litros de Alcool?"));
+    var tanque = parseInt(prompt("Quantos litros de combustivel abasteceu?"));
 
-    document.write("O consumo de gasolina foi  <br>");
-    document.write(caminhoComGasolina / tanque);
-    document.write("<br>");
-    document.write("<br> O consumo de alcool foi  <br>");
-    document.write(consumoDeAlcool / tanque);
+    mostra("O consumo de gasolina foi");
+    mostra(caminhoComGasolina / tanque);
+    mostra("O consumo de alcool foi");
+    mostra(consumoDeAlcool / tanque);
+
 </script>
 
